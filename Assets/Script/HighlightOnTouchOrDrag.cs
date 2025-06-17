@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HighlightOnMouseOver : MonoBehaviour
+public class HighlightOnTouchOrDrag : MonoBehaviour
 {
     public Material outlineMaterial; 
     private Material[] originalMaterials;
