@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class HighlightOnTouchOrDrag : MonoBehaviour
 {
-    public Material outlineMaterial; 
-    private Material[] originalMaterials;
-    private Renderer rend;
+    public Color outlineColor; 
+    private Color originalOutlineColor;
     private bool isHighlighted = false;
 
     void Start()
     {
-        rend = GetComponent<Renderer>();
-        originalMaterials = rend.materials;
+        originalOutlineColor = GetComponent<SpriteRenderer>().color;
     }
 
     void Update()
@@ -56,20 +54,13 @@ public class HighlightOnTouchOrDrag : MonoBehaviour
     {
         if (isHighlighted) return;
         isHighlighted = true;
-
-        
-        Material[] mats = new Material[originalMaterials.Length + 1];
-        for (int i = 0; i < originalMaterials.Length; i++)
-            mats[i] = originalMaterials[i];
-        mats[mats.Length - 1] = outlineMaterial;
-
-        rend.materials = mats;
+        GetComponent<SpriteRenderer>().color=outlineColor;
     }
 
     private void HideOutline()
     {
         if (!isHighlighted) return;
         isHighlighted = false;
-        rend.materials = originalMaterials;
+        GetComponent<SpriteRenderer>().color = originalOutlineColor;
     }
 }

@@ -1,16 +1,23 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static GameManager instance;
+    [SerializeField] private List<GameObject> listLand;
+    [SerializeField] private List<GameObject> listZone;
+    [SerializeField] private List<GameObject> listLandUserPlay;
+
+    private void Awake()
     {
-        
+        instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+
+
+    public void SpawnLand()
     {
-        
+
     }
 }
