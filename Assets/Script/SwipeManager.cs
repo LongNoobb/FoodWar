@@ -36,11 +36,10 @@ public class SwipeManager : MonoBehaviour
 
         var ped = new PointerEventData(eventSystem) { position = screenPos };
         var results = new List<RaycastResult>();
-        raycaster.Raycast(ped, results);
+        raycaster.Raycast(ped, results);       
         if (results.Count == 0) return;
-
+        
         var card = results[0].gameObject;
-
 
         if (card.CompareTag("Card") && card != _lastRotatedCard && !_alreadyRotated.Contains(card))
         {
@@ -48,6 +47,11 @@ public class SwipeManager : MonoBehaviour
             _lastRotatedCard = card;
             _alreadyRotated.Add(card);
         }
+        if (_alreadyRotated.Count == 4)
+        {
+            gameObject.GetComponentInParent<SwapAndMoveCardManager>().gameObject.SetActive(false);
+        }
+       
     }
 
 
