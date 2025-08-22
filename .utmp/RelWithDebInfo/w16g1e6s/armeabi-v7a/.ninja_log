@@ -1,0 +1,10 @@
+# ninja log v5
+1	1892	7775538329898369	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	1da47ab3ef6a2283
+33	1937	7775538330314995	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	8f2caec5708d6962
+60	2150	7775538332541379	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	55601883d3a7f4aa
+23	2201	7775538332980950	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	f41999d5b6be4b19
+101	2290	7775538333965837	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	52387819b69fda22
+78	2385	7775538334983859	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	626247dea7bf284c
+46	2547	7775538336597596	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	c9922d915aa7d755
+12	2700	7775538338105248	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	dcd9c4bc447a2d09
+2700	2900	7775538340234373	C:/Users/DUCLONG/Unity/FoodWar/FoodWar/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/w16g1e6s/obj/armeabi-v7a/libgame.so	8000254949ce0e91

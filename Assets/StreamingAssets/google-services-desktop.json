@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "445358429884",
+    "firebase_url": "https://foodwar-41647-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "foodwar-41647",
+    "storage_bucket": "foodwar-41647.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445358429884:android:a96d2662ee663f646b22b9",
+        "android_client_info": {
+          "package_name": "com.longnoob.foodwar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6v0RHbhwX-rzwh17kFbwPGqTqZH1TDk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

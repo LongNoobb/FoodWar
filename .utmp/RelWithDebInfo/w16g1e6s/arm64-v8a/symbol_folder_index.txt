@@ -1,0 +1,1 @@
+C:\Users\DUCLONG\Unity\FoodWar\FoodWar\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\w16g1e6s\obj\arm64-v8a
