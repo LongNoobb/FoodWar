@@ -1,7 +1,14 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "LandscapeCard", menuName = "Scriptable Objects/LandscapeCard")]
-public class LandscapeCard : ScriptableObject
+[CreateAssetMenu(menuName = "Cards/Landscape")]
+public class LandscapeCard : Card
 {
-    
+    public int manaBonus;
+    public int durationTurns;
+
+    public override void Play()
+    {
+        base.Play();
+        // Logic landscape
+    }
 }

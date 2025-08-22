@@ -1,7 +1,14 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "SpellCard", menuName = "Scriptable Objects/SpellCard")]
-public class SpellCard : ScriptableObject
+[CreateAssetMenu(menuName = "Cards/Spell")]
+public class SpellCard : Card
 {
-    
+    public CardEffect spellEffect;
+    public bool isInstant;
+
+    public override void Play()
+    {
+        base.Play();
+        spellEffect?.Execute();
+    }
 }

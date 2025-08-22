@@ -1,7 +1,14 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ItemCard", menuName = "Scriptable Objects/ItemCard")]
-public class ItemCard : ScriptableObject
+[CreateAssetMenu(menuName = "Cards/Item")]
+public class ItemCard : Card
 {
-    
+    public CardEffect equipEffect;
+    public bool isEquipment;
+
+    public override void Play()
+    {
+        base.Play();
+        equipEffect?.Execute();
+    }
 }
